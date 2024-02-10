@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subcribe Page</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        iframe {
+            border: none;
+            overflow: hidden;
+            height: 20px;
+            width: 50px;
+        }
+
+        .header {
+            background-color: #fff;
+            padding: 25px 300px;
+            box-shadow: inset 0 -3px 0 0 rgba(0, 0, 0, 0.15);
+        }
+
+        .htext_style {
+            color: #a9a9a9;
+            font-size: 14px;
+            float: right;
+            margin-right: 15px;
+            padding-top: 5px;
+        }
+
+        .yt_button {
+            float: right;
+            height: 32px;
+            width: 32px;
+            background: url("https://pixfort.website/themeforest/landing/flatpack/12-subscribe/images/social_icons/yt.png");
+            margin-left: 5px;
+        }
+
+        .yt_button:hover {
+            float: right;
+            background: url("https://pixfort.website/themeforest/landing/flatpack/12-subscribe/images/social_icons/youtube-hover.png");
+        }
+
+        .twitter_button {
+            float: right;
+            height: 32px;
+            width: 32px;
+            background: url("https://pixfort.website/themeforest/landing/flatpack/12-subscribe/images/social_icons/twitter.png");
+            margin-left: 5px;
+        }
+
+        .twitter_button:hover {
+            float: right;
+            background: url("https://pixfort.website/themeforest/landing/flatpack/12-subscribe/images/social_icons/twitter-hover.png");
+        }
+
+        .facebook_button {
+            float: right;
+            height: 32px;
+            width: 32px;
+            background: url("https://pixfort.website/themeforest/landing/flatpack/12-subscribe/images/social_icons/facebook.png");
+            margin-left: 5px;
+        }
+
+        .facebook_button:hover {
+            float: right;
+            background: url("https://pixfort.website/themeforest/landing/flatpack/12-subscribe/images/social_icons/facebook-hover.png");
+        }
+
+        .coming_soon {
+            background: #eaeaea;
+            text-align: center;
+            padding-top: 5px;
+        }
+
+        .context {
+            background-color: #fff;
+            position: relative;
+            max-width: 650px;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 4px;
+            overflow: hidden;
+            color: #000000;
+            margin-top: 70px;
+            padding: 30px 40px;
+        }
+
+        .title {
+            background-color: #fff;
+            color: #000000;
+            font-size: 26px;
+            font-weight: bold;
+            //padding-top: 40px;
+        }
+
+        .subtitle {
+            background-color: #fff;
+            max-width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+            color: #a9a9a9;
+            font-size: 18px;
+            padding: 20px 0px;
+        }
+
+        .email_subscribe {
+            display: inline-block;
+            position: relative;
+            text-align: center;
+            width: 80%;
+        }
+
+        #contact_form input {
+            background: #eee;
+            float: left;
+            border-radius: 3px;
+            color: #888;
+            font-weight: normal;
+            font-size: 16px;
+            height: 36px;
+            width: 66%;
+            display: inline-block;
+            position: relative;
+        }
+
+        .subscribe_btn .subscribe_btn {
+            background: #11b1c2;
+            border-radius: 3px;
+            color: #fff;
+            font-weight: normal;
+            font-size: 16px;
+            text-decoration: none;
+            position: relative;
+            display: inline-block;
+            float: right;
+            padding: 12px 30px;
+            border: none;
+        }
+
+        .subscribe_btn .subscribe_btn:hover {
+            background: #0da5b8;
+            color: #fff;
+            border: none;
+        }
+
+        .note_st {
+            text-align: center;
+            color: #d3d3d3;
+            font-size: 14px;
+            //padding-bottom: 20px;
+            text-align: left;
+            position: relative;
+            top: 20px;
+        }
+
+        .coming_st {
+            text-align: center;
+            position: relative;
+            width: 60%;
+            margin-left: 20%;
+        }
+
+        .tit_style {
+            text-align: center;
+            padding-top: 60px;
+            font-size: 26px;
+            font-weight: bold;
+            color: #000000;
+        }
+
+        .txt_style {
+            text-align: center;
+            color: #a9a9a9;
+            font-size: 18px;
+            width: 600px;
+            padding-left: 150px;
+        }
+
+        .video_style iframe {
+            padding-top: 25px;
+            padding-bottom: 55px;
+            width: 600px;
+            height: 337px;
+            text-align: center;
+
+        }
+
+        .footer,
+        .part2 {
+            background: #fff;
+            text-align: center;
+            display: flex;
+            flex-direction: row;
+            gap: 100px;
+            padding: 10px 0px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .part2 {
+            gap: 20px;
+        }
+
+        .twitter-share-button {
+            text-decoration: none;
+            background-color: black;
+            border-radius: 50px;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="header">
+            <img src="https://pixfort.website/themeforest/landing/flatpack/12-subscribe/images/12_subscribe/logo.png"
+                alt="logo">
+            <a href="#" class="yt_button"></a>
+            <a href="#" class="twitter_button"></a>
+            <a href="#" class="facebook_button"></a>
+            <div class="htext_style">Stay connected</div>
+        </div>
+        <div class="coming_soon">
+            <div class="context">
+                <div class="title">We Are Coming Soon</div>
+                <div class="subtitle">Just Subscribe to get full access to our new tutorial + all attachments files.
+                </div>
+                <div class="email_subscribe  subscribe_btn">
+                    <fieldset id="contact_form">
+                        <div id="result"></div>
+                        <input type="email" name="email" id="email" placeholder="Enter Your Email">
+                        <button class="subscribe_btn" id="subscribe_btn_12">SUBSCRIBE</button>
+                    </fieldset>
+                    <div class="note_st">*Note: Bundle ends in two weeks from now.</div>
+                </div>
+            </div>
+            <div class="coming_st">
+                <h1 class="tit_style">Watch who is coming!</h1>
+                <p class="txt_style">
+                    we are the leading company in web tutorials with over 500 handpicked videos your dreams real with
+                    awseome projects.
+                </p>
+            </div>
+            <div class="video_style">
+                <iframe
+                    src="https://player.vimeo.com/video/102732914?title=0&amp;byline=0&amp;portrait=0&amp;color=11b1c2&amp;wmode=opaque"
+                    allowfullscreen="">
+                </iframe>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer1">
+                <span class="rights_st" style="color:#a9a9a9;"> All rights reserved Copyright &copy; 2014 FLATPACK by
+                    <span class="pixfort_st" style="color:#11b1c2;">PixFort</span>
+                </span>
+            </div>
+            <div class="part2">
+                <div class="likes_st" style="color:#a9a9a9;">Your likes &amp; share makes us happy!</div>
+                <div class="socbuttons">
+                    <div class="soc_icons">
+                        <a href="https://twitter.com/share" class="twitter-share-button"
+                            style="width: 80px; height: 20px; padding-left: 5px; padding-top: 3px; font-size: 14px;">Tweet</a>
+                        &nbsp;&nbsp;&nbsp;
+                        <iframe
+                            src="https://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fthemeforest.net%2Fuser%2FPixFort&amp;width&amp;layout=button&amp;action=like&amp;show_faces=false&amp;share=false&amp;height=35&amp;appId=445119778844521"
+                            class="c1"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
